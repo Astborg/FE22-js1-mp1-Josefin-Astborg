@@ -28,7 +28,12 @@ for( col in columnNr){
         column.style.backgroundColor = 'black'
         column.style.color = 'white'
     }   
+    if(col % 6 === 3){
+        column.style.backgroundColor = 'purple'
+        column.style.color = 'white'
+    }
 }
+
 document.body.append(container1)
 container1.style.width = '50px'
 container1.style.border = '10px solid purple'
@@ -47,7 +52,11 @@ for( col1 in columnN1){
     if(col1 % 2 === 0){
         column1.style.backgroundColor = 'black'
         column1.style.color = 'white'
-    }   
+    }  
+    if(col1 % 10 === 1){
+        column1.style.backgroundColor = 'purple'
+        column1.style.color = 'white'
+    } 
 }
 document.body.append(container2)
 container2.style.width = '50px'
@@ -70,6 +79,10 @@ for( col2 in columnN2){
     if(col2 % 2 === 0){
         column2.style.backgroundColor = 'black'
         column2.style.color = 'white'
+    } 
+    if(col2 % 10 === 5){
+        column2.style.backgroundColor = 'purple'
+    
     } 
 }
 document.body.append(container3)
